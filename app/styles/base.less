@@ -1,0 +1,135 @@
+& {
+    #platui > #variables;
+    #platui > #mixins;
+
+    .container {
+        @sidebar-width: 15em;
+        @navbar-height: 4em;
+
+        height: 100%;
+        width: 100%;
+        padding-left: @sidebar-width;
+        box-sizing: border-box;
+
+        .inner-container {
+            height: 100%;
+            width: 100%;
+            padding-top: @navbar-height;
+            box-sizing: border-box;
+
+            .navbar {
+                height: @navbar-height;
+            }
+        }
+
+        .sidebar {
+            width: @sidebar-width;
+        }
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .absolute {
+        position: absolute;
+    }
+
+    .static {
+        position: static;
+    }
+
+    .fixed {
+        position: fixed;
+    }
+
+    .tl {
+        top: 0;
+        left: 0;
+    }
+
+    .tr {
+        top: 0;
+        right: 0;
+    }
+
+    .bl {
+        bottom: 0;
+        left: 0;
+    }
+
+    .br {
+        bottom: 0;
+        right: 0;
+    }
+
+    .block-xs {
+        width: 100px;
+        height: 50px;
+    }
+
+    .block-sm {
+        width: 200px;
+        height: 100px;
+    }
+
+    .block {
+        width: 400px;
+        height: 200px;
+    }
+
+    block-lg {
+        width: 600px;
+        height: 300px;
+    }
+
+    .block-xl {
+        width: 800px;
+        height: 400px;
+    }
+
+    .padding-tb {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .fill-width {
+        width: 100%;
+    }
+
+    .fill-height {
+        height: 100%;
+    }
+
+    .scroll {
+        .scroll(y);
+    }
+
+    .border-box {
+        box-sizing: border-box;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .purple {
+        background-color: purple;
+    }
+
+    .orange {
+        background-color: orange;
+    }
+
+    .text-white {
+        color: white;
+    }
+}
