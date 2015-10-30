@@ -3,8 +3,9 @@
     #platui > #mixins;
 
     .container {
-        @sidebar-width: 15em;
+        @sidebar-width: 5em;
         @navbar-height: 4em;
+        @footer-height: 4em;
 
         height: 100%;
         width: 100%;
@@ -15,16 +16,34 @@
             height: 100%;
             width: 100%;
             padding-top: @navbar-height;
+            padding-bottom: @footer-height;
             box-sizing: border-box;
 
             .navbar {
                 height: @navbar-height;
+            }
+
+            .footer {
+              height: @footer-height;
             }
         }
 
         .sidebar {
             width: @sidebar-width;
         }
+    }
+    .divtest {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      position: relative;
+      overflow-y: auto;
+      overflow-x: hidden;
+      // -webkit-overflow-scrolling: touch;
     }
 
     .relative {
@@ -78,7 +97,7 @@
         height: 200px;
     }
 
-    block-lg {
+    .block-lg {
         width: 600px;
         height: 300px;
     }

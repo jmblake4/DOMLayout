@@ -39,6 +39,7 @@
     "start:index2": "concurrent -r -k \"npm run watch\" \"static-server -p 3000 -i index2.html app\"",
     "start:index3": "concurrent -r -k \"npm run watch\" \"static-server -p 3000 -i index3.html app\"",
     "start:index4": "concurrent -r -k \"npm run watch\" \"static-server -p 3000 -i index4.html app\"",
+    "start:index5": "concurrent -r -k \"npm run watch\" \"static-server -p 3000 -i index5.html app\"",
     "ts": "tsconfig && tsc -p .",
     "tsconfig": "tsconfig",
     "tsd": "tsd update -so && tsd link",
